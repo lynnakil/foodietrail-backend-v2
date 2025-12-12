@@ -34,8 +34,9 @@ app.use('/api/reviews', reviewRoutes);
 app.use('/api/shop', shopRoutes);
 app.use('/api/contact', contactRoutes);
 
-const PORT = process.env.PORT || 3001;
+const port = process.env.PORT || 8080;
 
-app.listen(PORT, () => {
-  console.log(`Server running on port ${PORT}`);
+app.listen(port, () => {
+  console.log(`Server running on port ${port}`);
 });
+
